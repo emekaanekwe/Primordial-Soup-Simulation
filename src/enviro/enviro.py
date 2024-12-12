@@ -14,3 +14,6 @@ class Enviro:
     
     def update(self):
         pass
+    
+    def mutate(self):
+        print("enviro is vehicle of selection")
