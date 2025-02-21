@@ -10,5 +10,7 @@ class Agent:
         print("sets starting position")
         
     def move(self, direction):
-        x, y = direction
-        self.start_point[0] = x + self.start_point[0] = y
+        pos_x, pos_y = direction
+        self.start_point[0] = pos_x + self.start_point[0] #should possibly be 2D array 
+        self.start_point[0] = pos_y + self.start_point[0]
+        

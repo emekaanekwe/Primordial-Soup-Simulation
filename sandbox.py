@@ -11,4 +11,4 @@ def make_gene():
     else:
         print("1")
         
-make_gene()
+make_gene() to 
