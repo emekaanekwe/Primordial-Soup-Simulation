@@ -1,3 +1,7 @@
+'''
+Need to have enviro mutate like agents do
+'''
+
 import numpy as np
 from config import settings
 
