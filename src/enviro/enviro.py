@@ -1,7 +1,9 @@
 import numpy as np
-from config import settings
 
-class Enviro:
+from enviro.genetics import Genetics
+#from config import settings
+
+class Enviro(Genetics):
     def __init__(self, settings):
         self.grid_size = settings.grid_size
         # instantiate 2d grid
