@@ -24,32 +24,21 @@ class Genetics:
         }
         
     def generate_sequence(self):
-     if len(sequence) = 300:
+     if len(self.sequence) = 300:
          return
      else:
         nucleotide_0 = base_at[random.randint(0,1)]
-        sequence.append(nucleotide_0) 
+        self.sequence.append(nucleotide_0) 
         if nucleotide_0 == "A":
-            sequence.append("T")
+            self.sequence.append("T")
         else:
-            sequence.append("A")
+            self.sequence.append("A")
 
-        return generate_sequence()
+        return generate_sequence(self.sequence)
             
          
         sequence.append(base_at[random.randint(0,1)]
 
         sequence.append(base_cg[random.randint(0,1)
-        sequence.append(base_cg[random.randint(0,1)
-                        
-                        
-        
-
-
-'''
-m = map(int: base)
-map[0] => a
-
-'''
-    
+        sequence.append(base_cg[random.randint(0,1)    
     
