@@ -6,7 +6,7 @@ import numpy as np
 
 # hyperparams
 organisms = 2
-steps = 3
+steps = 100
 frames = []
 positions = np.random.uniform(0, 10)
 
