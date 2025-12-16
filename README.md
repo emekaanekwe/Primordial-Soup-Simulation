@@ -9,11 +9,17 @@ My project takes a slightly different (and perhaps too ambitious) approach to ev
 
 ## Project Progress
 
-### 14/12/24
+### 12/14/24
 
 #### created the folder structure
 After some research, I considered how I wanted to structure this project.
 
-### 16/12/24
+### 12/16/24
 
 #### devising the learning model for the grid
+
+### 12/16/25
+
+#### rudimentary animations
+I created basic animations of 3d dots floating around in a 10x10x10 space
+My first attempt will to implement a tabular q-learning agent 
