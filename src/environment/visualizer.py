@@ -4,7 +4,7 @@ import numpy as np
 
 
 class Visualizer:
-    def __init__(self, bounds=10):
+    def __init__(self):
         """Simple 3D visualizer for organisms.
 
         Args:
@@ -40,21 +40,3 @@ class Visualizer:
         print("positions", positions)
         self.ax.scatter(positions[:, 0], positions[:, 1], positions[:, 2], s=100)
         print("self.ax.scatter(positions[:,0], positions[:,1], etc...)", self.ax)
-    def show(self):
-        """Display the visualization."""
-        plt.show()
-
-    def animate(self, position_frames, fps=30, filename='animation.mp4'):
-        """Animate organisms through multiple frames.
-
-        Args:
-            position_frames: List of position lists, e.g. [[[1,2,3]], [[1.1,2,3]], ...]
-            fps: Frames per second
-            filename: Output filename (default: 'animation.mp4')
-        """
-        def update_frame(frame_num):
-            self.update(position_frames[frame_num])
-
-        anim = FuncAnimation(self.fig, update_frame, frames=len(position_frames), interval=1000/fps)
-        anim.save(filename, writer='ffmpeg', fps=fps)
-        plt.close()
