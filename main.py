@@ -5,10 +5,10 @@ from matplotlib.animation import FuncAnimation
 import numpy as np
 
 # hyperparams
-organisms = 2
-steps = 100
+organisms = 3
+steps = 20
 frames = []
-positions = np.random.uniform(0, 10)
+
 
 if __name__ == "__main__":
     soup = Soup(bounds=10)
@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
     # Create animation
     soup.animate(frames, fps=30)
-    soup.update(positions)
+    soup.update_positions(positions)
     print("===Animation saved as animation.mp4===")
 
     """static display of environment
