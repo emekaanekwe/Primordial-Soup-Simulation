@@ -1,5 +1,5 @@
 # run the program
-from src.environment.soup import Soup
+from ver_1_1.src.environment.soup  import Soup
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 import numpy as np
