@@ -23,3 +23,14 @@ After some research, I considered how I wanted to structure this project.
 #### rudimentary animations
 I created basic animations of 3d dots floating around in a 10x10x10 space
 My first attempt will to implement a tabular q-learning agent 
+
+### 20/12/25
+
+#### change in project direction and trying MDA
+While using matplotlib, I found a severe limitation of creating separate objects for the 3d space. The reason was obvious: matplotlib is for graphical representation; and I needed something more dynamic. So I went back to redefine more clearly the *desiterata* of the project. After some deliberation, I came up with:
+1. Make a 3 dismensional simulated environment that models the collated observations of dynamic movement for a single prebiotic chemical (RNA)  parsimoniously
+2. only properties outside of the chemical that *allow* the chemical to function for some step interval t0...tN where N >= 5 (the chemical must at least persist for a short period of time)
+
+Based on the desiderata, I find it silly to attempt any kind of X-learning behavior to the object of interest at the moment.
+
+I wanted to get a feel for other simulators. So, I played around with MDAnalysis and learned how to produce an atom group, i.e., a python list with a couple of extra features that are MDA-specific. 
